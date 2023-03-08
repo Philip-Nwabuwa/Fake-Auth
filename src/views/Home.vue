@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import fakeAuth from "../auth";
+import fakeAuth from "../authentication/auth";
 
 export default {
   name: "Home",
@@ -20,11 +20,11 @@ export default {
   methods: {
     logout() {
       fakeAuth.logout().then(() => {
-        this.$router.push("/login");
+        this.$router.push("/");
       });
     },
     goToLogin() {
-      this.$router.push("/login");
+      this.$router.push("/");
     },
   },
 };

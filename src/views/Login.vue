@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import fakeAuth from "../auth";
+import fakeAuth from "../authentication/auth";
 
 export default {
   name: "Login",
   methods: {
     login() {
       fakeAuth.login().then(() => {
-        this.$router.push("/");
+        this.$router.push("/dashboard");
       });
     },
   },
