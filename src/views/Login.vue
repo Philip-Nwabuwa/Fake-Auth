@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import fakeAuth from "@/auth";
+import fakeAuth from "../auth";
 
 export default {
   name: "Login",
